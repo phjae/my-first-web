@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h2>Search Youtube</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>submit</button>
+    </form>
+
+    <form>
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">이용약관</label>
+    </form>
+    <h1>성별선택</h1>
+    <form> 
+        <input type="radio" name="sex" id="female" checked>
+        <label for="female">female</label>
+        <input type="radio" name="sex" id="male">
+        <label for="male">male</label>
+        <input type="radio" name="sex" id="other">
+        <label for="other">other</label>
+    </form>
+
+    <h3>동물 드롭박스</h3>
+    <label for="animal">select your animal</label>
+    <select name="animal" id="animal">
+        <option value="select">please select</option>
+        <option value="dog">dog</option>
+        <option value="cat">cat</option>
+        <option value="rabbit">rabbit</option>
+    </select>
+    <form>
+        <input type="range" id="one2ten" min="1" max="10" name="level">
+        <label for="one2ten">one to ten</label>
+    </form>
+    <p>
+        <textarea id="story"></textarea>
+        <label for="story">tell us your story</label>
+    </p>
+    <p>
+        <label for="story">tell us your story</label>
+        <br>
+        <textarea id="story"></textarea>
+    </p>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" required minlength="8">
+        <button>submit</button>
+    </form>
+    
+    <h1>Race Registration!</h1>
+<form action="">
+    <div>
+        <label for="name">First Name</label>
+        <input type="text" id="name">
+        <label for="Lname">Last Name</label>
+        <input type="text" id="Lname">
+    </div>
+    <p>
+        Select a Race:
+    </p>
+
+    <div>
+        <input type="radio" id="race_type">
+        <label for="race_type">Fun Run 5k</label>
+        <br>
+        <input type="radio" id="race_type">
+        <label for="race_type">Half Marathon</label>
+        <br>
+        <input type="radio" id="race_type" checked>
+        <label for="race_type">Full Marathon</label>
+    </div>
+    <p>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+    </p>
+    <div>
+        <label for="Sage">Select Age Group</label>
+            <select name="Sage" id="Sage">
+                <option value="select">please select</option>
+                <option value="18">under 18</option>
+                <option value="19_29">19-29</option>
+                <option value="30_50">30-50</option>
+                <option value="50">Above 50</option>
+            </select>
+    </div>
+    <button>Register!</button>
+</form>
+
+</body>
+</html>
